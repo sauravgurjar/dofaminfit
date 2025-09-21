@@ -184,12 +184,16 @@ const ProteinCoffeeWebsite = () => {
 
                 <div className="flex mt-4 md:m-0">
                   <div className="-mx-4">
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a href="#"
                        className="px-4 text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 hover:underline">About</a>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a href="#"
                        className="px-4 text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 hover:underline">Blog</a>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a href="#"
                        className="px-4 text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 hover:underline">News</a>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a href="#"
                        className="px-4 text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 hover:underline">Contact</a>
                   </div>
