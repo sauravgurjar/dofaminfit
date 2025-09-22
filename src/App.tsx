@@ -145,7 +145,7 @@ const ProteinCoffeeWebsite = () => {
                       created this brand to fuel your hustle with high-protein, guilt-free indulgence. Every sip blends bold flavor with smart nutrition—because you deserve both.
                     </p>
 
-                    <h3 className="mt-6 text-lg font-medium text-blue-500">Nandani Batra</h3>
+                    <h3 className="mt-6 text-lg font-medium text-blue-500">Nandni Batra</h3>
                     <p className="text-gray-600 dark:text-gray-300">Founder</p>
                   </div>
                 </div>
