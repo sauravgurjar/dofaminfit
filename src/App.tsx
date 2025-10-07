@@ -108,15 +108,6 @@ const ProteinCoffeeWebsite = () => {
             Coming Soon
           </span>
               </h1>
-
-              {/* Countdown Timer */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto mb-12">
-                <CountdownCard value={timeLeft.days} label="Days"/>
-                <CountdownCard value={timeLeft.hours} label="Hours"/>
-                <CountdownCard value={timeLeft.minutes} label="Minutes"/>
-                <CountdownCard value={timeLeft.seconds} label="Seconds"/>
-              </div>
-
               <div className="max-w-2xl mx-auto">
                 <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
                   At Protein Coffee, we believe the best brews are born from fresh insights and breaking traditional
