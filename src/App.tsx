@@ -6,12 +6,7 @@ import  nandani from './assets/nandnai.png';
 
 const ProteinCoffeeWebsite = () => {
   const [darkMode, setDarkMode] = useState(false);
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
-  });
+
 
   // Target date: October 1, 2025
   const targetDate = new Date('2025-10-01T00:00:00').getTime();
@@ -22,12 +17,6 @@ const ProteinCoffeeWebsite = () => {
       const distance = targetDate - now;
 
       if (distance > 0) {
-        setTimeLeft({
-          days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-          minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((distance % (1000 * 60)) / 1000)
-        });
       }
     }, 1000);
 
@@ -38,16 +27,7 @@ const ProteinCoffeeWebsite = () => {
     setDarkMode(!darkMode);
   };
 
-  const CountdownCard = ({ value, label }: { value: number; label: string }) => (
-      <div className="bg-white/10 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20 dark:border-gray-700/50">
-        <div className="text-4xl md:text-5xl font-bold text-amber-600 dark:text-amber-400 mb-2">
-          {value.toString().padStart(2, '0')}
-        </div>
-        <div className="text-sm uppercase tracking-wider text-gray-600 dark:text-gray-300">
-          {label}
-        </div>
-      </div>
-  );
+
 
   return (
       <div className={`min-h-screen transition-all duration-500 ${darkMode ? 'dark' : ''}`}>
@@ -120,7 +100,7 @@ const ProteinCoffeeWebsite = () => {
 
             {/* Team Section */}
             <section className="bg-white dark:bg-transparent">
-              <div className="container px-6 py-10 mx-auto">
+              <div className="container px-6 py-20 mx-auto">
                 <div className="lg:-mx-6 lg:flex lg:items-center">
                   <img className="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]"
                        src={nandani}
