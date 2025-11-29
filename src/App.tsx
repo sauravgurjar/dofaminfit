@@ -29,7 +29,7 @@ const ProteinCoffeeWebsite = () => {
     }
   }, [darkMode]);
 
-  const toggleTheme = () => setDarkMode(!darkMode);
+
 
   return (
       <div className="min-h-screen transition-all duration-500">
