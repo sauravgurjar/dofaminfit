@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {Sun, Moon, Instagram, Facebook, Twitter} from "lucide-react";
+import { Instagram,} from "lucide-react";
 import  logo from './assets/NLOGO.png';
 import  nandani from './assets/nandni.jpg';
 
