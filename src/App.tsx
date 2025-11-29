@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import {Sun, Moon, Instagram, Facebook, Twitter} from "lucide-react";
-import  logo from './assets/logo.png';
+import  logo from './assets/NLOGO.png';
 import  nandani from './assets/nandni.jpg';
 
 const ProteinCoffeeWebsite = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   // Target date: October 1, 2025
   const targetDate = new Date("2025-10-01T00:00:00").getTime();
@@ -49,16 +49,7 @@ const ProteinCoffeeWebsite = () => {
                   Say hello! dopaminefits.com
                 </a>
 
-                <button
-                    onClick={toggleTheme}
-                    className="p-2 rounded-full bg-white/20 dark:bg-gray-800/50 backdrop-blur-sm border border-white/30 dark:border-gray-700/50 hover:bg-white/30 dark:hover:bg-gray-700/50 transition-all duration-300"
-                >
-                  {darkMode ? (
-                      <Sun className="w-5 h-5 text-yellow-500" />
-                  ) : (
-                      <Moon className="w-5 h-5 text-gray-700" />
-                  )}
-                </button>
+
               </div>
             </div>
           </header>
@@ -76,20 +67,9 @@ const ProteinCoffeeWebsite = () => {
                 />
               </div>
 
-
-                <div className="text-center">
-                  <h1 className="text-8xl font-bold bg-gradient-to-r from-amber-600 via-orange-600 to-red-500 bg-clip-text text-transparent">
-                    Dopamine
-                  </h1>
-                  <p className="text-2xl font-semibold text-gray-300 mt-0">
-                    Fits
-                  </p>
-
-              </div>
-
               <div className="max-w-2xl mx-auto">
                 <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
-                  At Protein Coffee, we believe the best brews are born from fresh
+                  At Dopamine Fits, we believe the best brews are born from fresh
                   insights and breaking traditional boundaries. We're here to
                   redefine your coffee experience—bold in flavor, rich in protein.
                 </p>
@@ -100,7 +80,7 @@ const ProteinCoffeeWebsite = () => {
             <section className="bg-white/80 dark:bg-gray-800/60 backdrop-blur-sm rounded-3xl mx-6 shadow-xl mt-12 transition-colors duration-500">
               <div className="container px-6 py-20 mx-auto">
                 <div className="lg:-mx-6 lg:flex lg:items-center">
-                  <img className="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]"
+                  <img className="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-60 rounded-lg lg:h-[30rem]"
                        src={nandani}
                        alt=""/>
 
@@ -121,18 +101,11 @@ const ProteinCoffeeWebsite = () => {
                     <p className="text-gray-600 dark:text-gray-400">Founder</p>
 
                     <div className="flex gap-4 mt-6">
-                      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                      <a href="https://www.instagram.com/dopamine__fits/" target="_blank" rel="noopener noreferrer"
                          className="text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors duration-300">
                         <Instagram className="w-6 h-6" />
                       </a>
-                      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                         className="text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors duration-300">
-                        <Facebook className="w-6 h-6" />
-                      </a>
-                      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                         className="text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors duration-300">
-                        <Twitter className="w-6 h-6" />
-                      </a>
+
                     </div>
                   </div>
 
